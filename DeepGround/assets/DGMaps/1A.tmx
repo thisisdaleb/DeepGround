@@ -47,6 +47,26 @@
     <property name="water" value=""/>
    </properties>
   </tile>
+  <tile id="19">
+   <properties>
+    <property name="lightYellow" value=""/>
+   </properties>
+  </tile>
+  <tile id="20">
+   <properties>
+    <property name="lightGreen" value=""/>
+   </properties>
+  </tile>
+  <tile id="21">
+   <properties>
+    <property name="lightBlue" value=""/>
+   </properties>
+  </tile>
+  <tile id="22">
+   <properties>
+    <property name="lightRed" value=""/>
+   </properties>
+  </tile>
   <tile id="23">
    <properties>
     <property name="blocked" value="1"/>
@@ -83,14 +103,14 @@
    </properties>
   </tile>
  </tileset>
- <layer name="Back" width="32" height="18">
+ <layer name="Back" width="32" height="18" visible="0">
   <data encoding="base64" compression="zlib">
    eJztwQEBAAAAgiD/r25IQAEAfBkJAAAB
   </data>
  </layer>
  <layer name="Front" width="32" height="18">
   <data encoding="base64" compression="zlib">
-   eJzjZkAFXEDMSEfMTWX7JUjE6PazMjAcINUMGGYB6mUgEaDbTy8gOsD2wwC59osPsP3UAqP20xaIkWE/IT3UBMM9/Eftp479wLqFgZMAZqWC/bjsIbb+JeRGdEzt+p9UDADmjQZz
+   eJzjZkAFXEDMSEfMTWX7JUjE6PazMjAcINUMGGYB6mUgEaDbTy8gOsD2wwC59osPsP3UAqP20xaIkGG/GC0cQoL99ASj9g8N+4F1CwMnAcxKBftx2UNs/UvIjeiY2vU/qRgA3k0GcQ==
   </data>
  </layer>
 </map>

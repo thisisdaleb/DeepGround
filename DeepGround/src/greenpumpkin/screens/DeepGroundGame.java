@@ -2,7 +2,6 @@ package greenpumpkin.screens;
 
 import greenpumpkin.artemis.DGWorld;
 import greenpumpkin.artemis.MapList;
-import greenpumpkin.artemis.entities.LightFactory;
 import greenpumpkin.artemis.entities.PlayerFactory;
 import greenpumpkin.artemis.systems.*;
 import greenpumpkin.game.*;
@@ -10,7 +9,6 @@ import com.artemis.managers.GroupManager;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.audio.Music;
-import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 
@@ -29,10 +27,12 @@ public class DeepGroundGame implements Screen {
 		world = new DGWorld();
 
 		DGWorld.init();
-		MapList.init();
+		MapList.init(6, 6);
 		DGWorld.setMaps("1A.tmx", "TestMapBack.tmx");
 
 		world.setManager(new GroupManager());
+		world.setSystem(new DeleteMapEntitiesS());
+		world.setSystem(new LightsOnMapS());
 		world.setSystem(new ControllerInputS());
 		world.setSystem(new TiledS());
 		world.setSystem(new LightCycleS());
@@ -45,8 +45,7 @@ public class DeepGroundGame implements Screen {
 		world.initialize();
 
 		//These lights will not be here. They are just for a test.
-		world.addEntity(LightFactory.createCyclePoint(world, DGWorld.rayHandler,  DGWorld.numRays, new Color(0.0f, 0.1f, 0.8f, 1.0f), DGWorld.lightDistance*2f, 6f, 1.0f, 1f, 30f/64f));
-		world.addEntity(LightFactory.createCyclePoint(world, DGWorld.rayHandler,  DGWorld.numRays, new Color(1.0f, 1.0f, 0.9f, 1.0f), DGWorld.lightDistance*2, 35f, 11f, 7.7f, 1.875f*4f));
+		//world.addEntity(LightFactory.createCyclePoint(world, DGWorld.rayHandler,  DGWorld.numRays, new Color(1.0f, 1.0f, 0.9f, 1.0f), DGWorld.lightDistance*2, 35f, 11f, 7.7f, 1.875f*4f));
 		//the real list of lights will be created with a for loop where the numbers come from a JSON file, in a different system.
 		
 		world.addEntity(PlayerFactory.create(world, 12, 4));

@@ -1,5 +1,6 @@
 package greenpumpkin.artemis;
 
+import greenpumpkin.artemis.systems.DeleteMapEntitiesS;
 import java.util.Arrays;
 
 import com.artemis.World;
@@ -17,7 +18,7 @@ public class DGWorld extends World {
 	private static TiledMap backgroundMap;
 	private static float mapSize = 1/16f;
 	public static final int numRays = 16; //how many rays are emitted for shadow casting
-	public static final float lightDistance = 12f; // distance light goes
+	public static final float lightDistance = 10f; // distance light goes
 	public static RayHandler rayHandler; //the main object of light2d, heavily important
 	public static OrthographicCamera camera;
 	public static SpriteBatch batch;
@@ -42,7 +43,7 @@ public class DGWorld extends World {
 		RayHandler.useDiffuseLight(true);
 		rayHandler = new RayHandler(null);
 		rayHandler.setCombinedMatrix(camera.combined);
-		rayHandler.setAmbientLight(0.15f, 0.15f, 0.15f, 1f);
+		rayHandler.setAmbientLight(0.24f, 0.24f, 0.25f, 1f);
 		rayHandler.setCulling(true);
 		rayHandler.setBlurNum(1);
 		rayHandler.setShadows(true);
@@ -63,7 +64,9 @@ public class DGWorld extends World {
 		frontRenderer = new OrthogonalTiledMapRenderer(DGWorld.foregroundMap, mapSize);
 		frontRenderer.setView(camera);
 		collisionLayer = (TiledMapTileLayer) foregroundMap.getLayers().get(1);
+		DeleteMapEntitiesS.remove=true;
 	}
+	
 	public static void setBackgroundMap(String mapFile) {
 		backgroundMap = new TmxMapLoader().load(mapFile);
 		backRenderer = new OrthogonalTiledMapRenderer(DGWorld.backgroundMap, mapSize);

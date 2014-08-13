@@ -18,7 +18,7 @@
  </tile>
  <tile id="5">
   <properties>
-   <property name="water" value=""/>
+   <property name="waterLight" value=""/>
   </properties>
  </tile>
  <tile id="6">
@@ -43,22 +43,32 @@
  </tile>
  <tile id="11">
   <properties>
-   <property name="water" value=""/>
+   <property name="waterLight" value=""/>
+  </properties>
+ </tile>
+ <tile id="19">
+  <properties>
+   <property name="lightYellow" value=""/>
+  </properties>
+ </tile>
+ <tile id="20">
+  <properties>
+   <property name="lightGreen" value=""/>
+  </properties>
+ </tile>
+ <tile id="21">
+  <properties>
+   <property name="lightBlue" value=""/>
+  </properties>
+ </tile>
+ <tile id="22">
+  <properties>
+   <property name="lightRed" value=""/>
   </properties>
  </tile>
  <tile id="23">
   <properties>
    <property name="blocked" value="1"/>
-  </properties>
- </tile>
- <tile id="24">
-  <properties>
-   <property name="diagonalRight" value=""/>
-  </properties>
- </tile>
- <tile id="25">
-  <properties>
-   <property name="diagonalLeft" value=""/>
   </properties>
  </tile>
  <tile id="26">

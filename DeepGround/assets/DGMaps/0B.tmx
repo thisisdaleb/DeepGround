@@ -7,15 +7,60 @@
     <property name="blocked" value=""/>
    </properties>
   </tile>
+  <tile id="3">
+   <properties>
+    <property name="diagonalRight" value=""/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="diagonalLeft" value=""/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="water" value=""/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="waterLight" value=""/>
+   </properties>
+  </tile>
+  <tile id="19">
+   <properties>
+    <property name="lightYellow" value=""/>
+   </properties>
+  </tile>
+  <tile id="20">
+   <properties>
+    <property name="lightGreen" value=""/>
+   </properties>
+  </tile>
+  <tile id="21">
+   <properties>
+    <property name="lightBlue" value=""/>
+   </properties>
+  </tile>
+  <tile id="22">
+   <properties>
+    <property name="lightRed" value=""/>
+   </properties>
+  </tile>
  </tileset>
  <layer name="Back" width="32" height="18">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFowACxAfaAXQCYiSoFSXTjpESliMB8AAxG5TGxaYlYCcCj9o/dO1nGWD7CYHhbD8An9oCcQ==
+   eJztwQEBAAAAgiD/r25IQAEAfBkJAAAB
   </data>
  </layer>
  <layer name="Front" width="32" height="18">
   <data encoding="base64" compression="zlib">
-   eJztjsEKgCAQRFeoQxc1+/9/jciFYdFybaWLA4OI47wJRHT8ZE+3glGXpofZqD2fUezy4j3BnbOsmP95yEbIU+HPk9J7ZGpqapCWxtw6iO0as854A7M1fKsNyNbyv26Q7B6+dsPF3LJlTy/fQSda7qoxLfg1456WvDUffQIACAZ4
+   eJzlkI0KgCAMhCcUEYRZUb3/m1akcIx+nK2COjhEvO07rImoe8mWVtVKuyR7AhvV+NOxXpa9t3AP2SDn5yxkHeRpY+ZI7XlETeODrDc1CLJ9IuMvf/l1ZbOrCOc3sc3sIsJGuUNgS/haHZAt5V/twNkpfGmHhVl68z2pfAM70bzXHlODv2fsE5PX5qMn1UoI9g==
   </data>
  </layer>
 </map>

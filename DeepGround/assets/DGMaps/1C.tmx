@@ -4,17 +4,22 @@
   <image source="TileSetA.png" width="96" height="80"/>
   <tile id="0">
    <properties>
-    <property name="blocked" value=""/>
+    <property name="blocked" value="1"/>
    </properties>
   </tile>
   <tile id="3">
    <properties>
-    <property name="diagonalRight" value=""/>
+    <property name="diagonalRight" value="1"/>
    </properties>
   </tile>
   <tile id="4">
    <properties>
-    <property name="diagonalLeft" value=""/>
+    <property name="diagonalLeft" value="1"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="waterLight" value=""/>
    </properties>
   </tile>
   <tile id="6">
@@ -24,22 +29,22 @@
   </tile>
   <tile id="8">
    <properties>
-    <property name="blocked" value=""/>
+    <property name="blocked" value="1"/>
    </properties>
   </tile>
   <tile id="9">
    <properties>
-    <property name="blocked" value=""/>
+    <property name="blocked" value="1"/>
    </properties>
   </tile>
   <tile id="10">
    <properties>
-    <property name="blocked" value=""/>
+    <property name="blocked" value="1"/>
    </properties>
   </tile>
   <tile id="11">
    <properties>
-    <property name="lightBlue" value=""/>
+    <property name="waterLight" value=""/>
    </properties>
   </tile>
   <tile id="19">
@@ -62,6 +67,31 @@
     <property name="lightRed" value=""/>
    </properties>
   </tile>
+  <tile id="23">
+   <properties>
+    <property name="blocked" value="1"/>
+   </properties>
+  </tile>
+  <tile id="26">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="27">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="28">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="29">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
  </tileset>
  <layer name="Back" width="32" height="18">
   <data encoding="base64" compression="zlib">
@@ -70,7 +100,7 @@
  </layer>
  <layer name="Front" width="32" height="18">
   <data encoding="base64" compression="zlib">
-   eJzFk2EKwjAMhVOYiEymm6jX8ygexaPsKB7FBFLIYrpG2tXA+9Eky/dI1x6WcUJdGqqH70h5GJY9b13H3EN/i+enNZN6IcG3+gej58x9VBtFfhR1MPKTyAXULuPBYteKkPEwJfK1gvbf4V2seZBx3YAP7AE1Vx4PdydfB3px7YPi5rfj4hOb7+NVMNoV1r3jeW7Bjnzvv7cl/18egtKB1cqL5rfexxq/1j7oPR1Zek6OX+olvuU9S+/1F77lRfvpVC32S34w6qXKzdP8qA/CvwyO
+   eJzllLEOwyAMRNm6dCz4//+0qpSTLlcbOyFShpzkIQT8DmOwttenEJ4GhW3Rt++ZzGFnqniMAt6UP4rskYTOs7ZnRnXsztiMEdVV5/X2v2dVJ28eJztDLx/vH4p8IL/W5SiX+ViPPuReZA/KgIezbOZ7LO0Lj4NerNw7T5yTGdqf2VrWyp2L9qGslZpHeUzGZvW8iv8TekD5+DfzcObOZXz1UHnvZu/bEb7nQd/jlYi8Q8oHu7dcV/Y9nzneo/fN8Xp4fAHBOhVk
   </data>
  </layer>
 </map>

@@ -1,5 +1,6 @@
 package greenpumpkin.artemis.entities;
 
+import greenpumpkin.artemis.components.ItemC;
 import greenpumpkin.artemis.components.LightC;
 import greenpumpkin.artemis.components.LightCycleC;
 import greenpumpkin.artemis.components.PositionC;
@@ -25,6 +26,8 @@ public class LightFactory {
 		pos.y=y;
 		e.addComponent(pos);
 		
+		e.addComponent(new ItemC());
+		
 		return e;
 	}
 	
@@ -46,6 +49,8 @@ public class LightFactory {
 		pos.y=y;
 		e.addComponent(pos);
 		
+		e.addComponent(new ItemC());
+		
 		return e;
 	}
 	
@@ -55,6 +60,8 @@ public class LightFactory {
 		LightC light = new LightC();
 		light.light = new ConeLight(rayHandler, numRays, color, lightDistance*3, posX, posY, angle, size);
 		e.addComponent(light);
+		
+		e.addComponent(new ItemC());
 		
 		return e;
 	}

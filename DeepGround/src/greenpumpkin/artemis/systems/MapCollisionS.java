@@ -50,7 +50,7 @@ public class MapCollisionS extends IntervalEntityProcessingSystem {
 			velocity.velX = 0;
 		}
 		if(diagonalLeft && (position.y%1f < (1-((position.x+0.5f)%1.0f)))) {
-			velocity.velY=((-velocity.velX)*1.4f);
+			velocity.velY=((-velocity.velX)*1.5f);
 			float newPosition=(float) (Math.floor(position.y)) + (1 - ((position.x+0.5f)%1f) );
 			if((position.x+0.5f)%1f < 0.15f)
 				newPosition=(float) (Math.floor(position.y-0.1f)) + (1 - ((position.x+0.5f)%1f));
@@ -58,7 +58,7 @@ public class MapCollisionS extends IntervalEntityProcessingSystem {
 				position.y=newPosition;
 		}
 		else if(diagonalRight && (position.y%1f < (position.x+0.5f)%1f)) {
-			velocity.velY=velocity.velX*1.4f;
+			velocity.velY=velocity.velX*1.5f;
 			float newPosition=(float) (Math.floor(position.y))+((position.x+0.5f)%1f);
 			if((position.x+0.5f)%1f > 0.85f)
 				newPosition=(float) (Math.floor(position.y-0.1f))+((position.x+0.5f)%1f);

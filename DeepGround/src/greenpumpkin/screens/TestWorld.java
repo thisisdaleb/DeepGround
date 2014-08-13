@@ -1,7 +1,6 @@
 package greenpumpkin.screens;
 
 import greenpumpkin.artemis.DGWorld;
-import greenpumpkin.artemis.MapList;
 import greenpumpkin.artemis.entities.LightFactory;
 import greenpumpkin.artemis.entities.PlayerFactory;
 import greenpumpkin.artemis.systems.*;
@@ -29,7 +28,6 @@ public class TestWorld implements Screen {
 		world = new DGWorld();
 
 		DGWorld.init();
-		MapList.init();
 		DGWorld.setMaps("TestMap.tmx", "TestMapBack.tmx");
 
 		world.setManager(new GroupManager());
