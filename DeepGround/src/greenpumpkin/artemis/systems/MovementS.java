@@ -34,9 +34,6 @@ public class MovementS extends IntervalEntityProcessingSystem {
 		
 		position.addX( velocity.velX * (1/60f));
 		position.addY( velocity.velY * (1/60f));
-		
-		if(position.y<0)
-			position.y=0;
 	}
 	
 	@Override

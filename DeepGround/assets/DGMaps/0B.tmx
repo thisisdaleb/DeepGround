@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="32" height="18" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="CaveSet" tilewidth="16" tileheight="16">
+  <image source="TileSetA.png" width="96" height="80"/>
+  <tile id="0">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Back" width="32" height="18">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFowACxAfaAXQCYiSoFSXTjpESliMB8AAxG5TGxaYlYCcCj9o/dO1nGWD7CYHhbD8An9oCcQ==
+  </data>
+ </layer>
+ <layer name="Front" width="32" height="18">
+  <data encoding="base64" compression="zlib">
+   eJztjsEKgCAQRFeoQxc1+/9/jciFYdFybaWLA4OI47wJRHT8ZE+3glGXpofZqD2fUezy4j3BnbOsmP95yEbIU+HPk9J7ZGpqapCWxtw6iO0as854A7M1fKsNyNbyv26Q7B6+dsPF3LJlTy/fQSda7qoxLfg1456WvDUffQIACAZ4
+  </data>
+ </layer>
+</map>

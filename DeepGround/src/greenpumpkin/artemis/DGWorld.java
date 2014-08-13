@@ -1,5 +1,7 @@
 package greenpumpkin.artemis;
 
+import java.util.Arrays;
+
 import com.artemis.World;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -7,6 +9,7 @@ import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
+
 import box2dLight.RayHandler;
 
 public class DGWorld extends World {
@@ -21,11 +24,12 @@ public class DGWorld extends World {
 	public static OrthogonalTiledMapRenderer frontRenderer;
 	public static OrthogonalTiledMapRenderer backRenderer;
 	public static TiledMapTileLayer collisionLayer;
+	public static int mapLocation[] = new int[]{0,1};
 	
 	public static void init() {
 		initCamera();
 		initRayHandler();
-		initBatch();	
+		initBatch();
 	}
 	
 	private static void initCamera() {
@@ -55,7 +59,7 @@ public class DGWorld extends World {
 	}
 	
 	public static void setForegroundMap(String mapFile) {
-		foregroundMap = new TmxMapLoader().load(mapFile);
+		foregroundMap = new TmxMapLoader().load("DGMaps/" + mapFile);
 		frontRenderer = new OrthogonalTiledMapRenderer(DGWorld.foregroundMap, mapSize);
 		frontRenderer.setView(camera);
 		collisionLayer = (TiledMapTileLayer) foregroundMap.getLayers().get(1);
@@ -64,6 +68,14 @@ public class DGWorld extends World {
 		backgroundMap = new TmxMapLoader().load(mapFile);
 		backRenderer = new OrthogonalTiledMapRenderer(DGWorld.backgroundMap, mapSize);
 		backRenderer.setView(camera);
+	}
+	
+	public static void changeMapLocation(int horizontal, int vertical) {
+		mapLocation[0] = horizontal;
+		mapLocation[1] = vertical;
+		if(horizontal>=0 && vertical>=0)
+			setForegroundMap(MapList.mapList.get(vertical).get(horizontal));
+		else System.out.println("ERROR: " + Arrays.toString(mapLocation));
 	}
 	
 	public static void flushRayHandler() {

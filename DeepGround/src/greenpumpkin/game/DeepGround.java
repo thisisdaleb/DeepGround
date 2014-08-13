@@ -17,7 +17,7 @@ public class DeepGround extends Game {
 
 	@Override
 	public void create() {
-		setScreen(new TestWorld()); //This defines what screen loads first.
+		setScreen(new DeepGroundGame()); //This defines what screen loads first.
 	}
 
 	public static void main (String[] arg) {

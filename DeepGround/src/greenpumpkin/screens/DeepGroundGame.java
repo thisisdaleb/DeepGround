@@ -19,7 +19,7 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 //learning how Artemis works.///////////////////////////////
 ////////////////////////////////////////////////////////////
 
-public class TestWorld implements Screen {
+public class DeepGroundGame implements Screen {
 	private Stage stage = new Stage();
 	Music caveTheme = Gdx.audio.newMusic(Gdx.files.internal("music/thisIsHome.mp3"));
 	private DGWorld world;
@@ -30,7 +30,7 @@ public class TestWorld implements Screen {
 
 		DGWorld.init();
 		MapList.init();
-		DGWorld.setMaps("TestMap.tmx", "TestMapBack.tmx");
+		DGWorld.setMaps("1A.tmx", "TestMapBack.tmx");
 
 		world.setManager(new GroupManager());
 		world.setSystem(new ControllerInputS());
