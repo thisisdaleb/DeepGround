@@ -13,6 +13,7 @@ import com.badlogic.gdx.InputProcessor;
 
 public class ControllerInputS extends EntityProcessingSystem implements InputProcessor {
 	@Mapper ComponentMapper<VelocityC> velMap;
+	@Mapper ComponentMapper<PlayerC> playerMap;
 	
 	private boolean up, down, left, right;
 	private float jumpTime;
@@ -30,6 +31,7 @@ public class ControllerInputS extends EntityProcessingSystem implements InputPro
 	@Override
 	protected void process(Entity e) {
 		VelocityC velocity = velMap.get(e);
+		PlayerC player = playerMap.get(e);
 		
 		 if(jumpTime<42)
 			 jumpTime++;
@@ -56,7 +58,7 @@ public class ControllerInputS extends EntityProcessingSystem implements InputPro
 		 
 		 else velocity.velX-=(velocity.velX/8);
 		 
-		 if(down){
+		 if(down && player.abilityFloat){
 			 velocity.velY-=(velocity.velY/2);
 		 }
 		 

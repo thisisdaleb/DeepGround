@@ -8,5 +8,5 @@ import com.artemis.Component;
 ////////////////////////////////////////////////////////////
 
 public class PlayerC extends Component {
-
+	public boolean abilityFloat = false;
 }
