@@ -19,7 +19,7 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 
 public class DeepGroundGame implements Screen {
 	private Stage stage = new Stage();
-	Music caveTheme = Gdx.audio.newMusic(Gdx.files.internal("music/thisIsHome.mp3"));
+	Music caveTheme = Gdx.audio.newMusic(Gdx.files.internal("music/caveTheme.mp3"));
 	private DGWorld world;
 	
 	@Override

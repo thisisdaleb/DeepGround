@@ -26,6 +26,7 @@ public class DGWorld extends World {
 	public static OrthogonalTiledMapRenderer backRenderer;
 	public static TiledMapTileLayer collisionLayer;
 	public static int mapLocation[] = new int[]{0,1};
+	private static float ambientColor[] = new float[]{0.16f ,0.16f ,0.26f};
 	
 	public static void init() {
 		initCamera();
@@ -43,7 +44,7 @@ public class DGWorld extends World {
 		RayHandler.useDiffuseLight(true);
 		rayHandler = new RayHandler(null);
 		rayHandler.setCombinedMatrix(camera.combined);
-		rayHandler.setAmbientLight(0.24f, 0.24f, 0.25f, 1f);
+		rayHandler.setAmbientLight(ambientColor[0]+(0.03f*mapLocation[1]), ambientColor[0]+(0.03f*mapLocation[1]), ambientColor[0]+(0.02f*mapLocation[1]), 1f);
 		rayHandler.setCulling(true);
 		rayHandler.setBlurNum(1);
 		rayHandler.setShadows(true);
@@ -76,8 +77,10 @@ public class DGWorld extends World {
 	public static void changeMapLocation(int horizontal, int vertical) {
 		mapLocation[0] = horizontal;
 		mapLocation[1] = vertical;
-		if(horizontal>=0 && vertical>=0)
+		if(horizontal>=0 && vertical>=0){
 			setForegroundMap(MapList.mapList.get(vertical).get(horizontal));
+			rayHandler.setAmbientLight(ambientColor[0]+(0.03f*mapLocation[1]), ambientColor[0]+(0.03f*mapLocation[1]), ambientColor[0]+(0.01f*mapLocation[1]), 1f);
+		}
 		else System.out.println("ERROR: " + Arrays.toString(mapLocation));
 	}
 	
