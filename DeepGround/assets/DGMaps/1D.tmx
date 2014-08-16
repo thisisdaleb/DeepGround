@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="32" height="18" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" source="CaveSet.tsx"/>
+ <tileset firstgid="31" source="CaveSet.tsx"/>
+ <layer name="Back" width="32" height="18">
+  <data encoding="base64" compression="zlib">
+   eJztwQEBAAAAgiD/r25IQAEAfBkJAAAB
+  </data>
+ </layer>
+ <layer name="Front" width="32" height="18">
+  <data encoding="base64" compression="zlib">
+   eJzNld0KgCAMRifUhdVlf0L17D1qSghRU5c6a/DdKeegcwoAaOFZq84ciMgUjE+pJqOD1KmJ3JGBH+PBwbehOHDyKQ6KmR9y6AH2rx1Mcd9DqC9L8H1nUZKPOXDxXXN3ufGxWZ3KtjN5Qs6bUirRKfZPeOMUy6/gfA821Hl9rQH8fWP4HZLNsT7GJdS3Egnl7rB9f323B/xVB1Q=
+  </data>
+ </layer>
+</map>

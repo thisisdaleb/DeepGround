@@ -103,14 +103,14 @@
    </properties>
   </tile>
  </tileset>
- <layer name="Back" width="32" height="18" visible="0">
+ <layer name="Back" width="32" height="18">
   <data encoding="base64" compression="zlib">
-   eJztwQEBAAAAgiD/r25IQAEAfBkJAAAB
+   eJxjYBh4wDjQDhgFo2AUjIJRMApGwYgCABF8AAI=
   </data>
  </layer>
  <layer name="Front" width="32" height="18">
   <data encoding="base64" compression="zlib">
-   eJzjZkAFXEDMSEfMTWX7JUjE6PazMjAcINUMGGYB6mUgEaDbTy8gOsD2wwC59osPsP3UAqP20xaIkGG/GC0cQoL99ASj9g8N+4F1CwMnAcxKBftx2UNs/UvIjeiY2vU/qRgA3k0GcQ==
+   eJzN1TEKgDAMBdBf0EFdrYr3P4hH00UIQZqEpo0f/pqX0iEJQApudpx1GOs5ewCuFbZo3dM418tv5Up+yzd/+fQfe7jU7+nxLIH23/0t2NdmD/ZrEuXnYP8N9Uu347ktmISOlX7J0d5IaUde7s8Gy6M3IGoGAQ==
   </data>
  </layer>
 </map>

@@ -1,4 +1,4 @@
-package greenpumpkin.artemis;
+package greenpumpkin.MapCreation;
 
 import java.util.ArrayList;
 

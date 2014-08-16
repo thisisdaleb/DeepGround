@@ -1,6 +1,8 @@
 package greenpumpkin.artemis;
 
+import greenpumpkin.MapCreation.MapList;
 import greenpumpkin.artemis.systems.DeleteMapEntitiesS;
+
 import java.util.Arrays;
 
 import com.artemis.World;
@@ -26,7 +28,7 @@ public class DGWorld extends World {
 	public static OrthogonalTiledMapRenderer backRenderer;
 	public static TiledMapTileLayer collisionLayer;
 	public static int mapLocation[] = new int[]{0,1};
-	private static float ambientColor[] = new float[]{0.16f ,0.16f ,0.26f};
+	private static float ambientColor[] = new float[]{0.20f ,0.20f ,0.26f};
 	
 	public static void init() {
 		initCamera();
@@ -44,7 +46,7 @@ public class DGWorld extends World {
 		RayHandler.useDiffuseLight(true);
 		rayHandler = new RayHandler(null);
 		rayHandler.setCombinedMatrix(camera.combined);
-		rayHandler.setAmbientLight(ambientColor[0]+(0.03f*mapLocation[1]), ambientColor[0]+(0.03f*mapLocation[1]), ambientColor[0]+(0.02f*mapLocation[1]), 1f);
+		rayHandler.setAmbientLight(ambientColor[0]+(0.012f*mapLocation[1]), ambientColor[0]+(0.012f*mapLocation[1]), ambientColor[0]+(0.007f*mapLocation[1]), 1f);
 		rayHandler.setCulling(true);
 		rayHandler.setBlurNum(1);
 		rayHandler.setShadows(true);

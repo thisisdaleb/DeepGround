@@ -14,16 +14,16 @@ public class LightsOnMapS extends VoidEntitySystem {
 		for(int x = 0;x<33;x++)
 			for(int y = 0; y<18;y++){
 				if(isCellBlocked(x,y,"lightYellow")){
-					world.addEntity(LightFactory.createPoint(world, DGWorld.rayHandler,  DGWorld.numRays, new Color(0.4f, 0.45f, 0.0f, 1.0f), DGWorld.lightDistance, x+0.5f, y+0.5f));
+					world.addEntity(LightFactory.createPoint(world, DGWorld.rayHandler,  DGWorld.numRays, new Color(0.4f, 0.45f, 0.2f, 1.0f), DGWorld.lightDistance, x+0.5f, y+0.5f));
 				}
 				else if(isCellBlocked(x,y,"lightRed")){
-					world.addEntity(LightFactory.createPoint(world, DGWorld.rayHandler,  DGWorld.numRays, new Color(0.4f, 0.0f, 0.0f, 1.0f), DGWorld.lightDistance, x+0.5f, y+0.5f));
+					world.addEntity(LightFactory.createPoint(world, DGWorld.rayHandler,  DGWorld.numRays, new Color(0.4f, 0.1f, 0.1f, 1.0f), DGWorld.lightDistance, x+0.5f, y+0.5f));
 				}
 				else if(isCellBlocked(x,y,"lightGreen")){
-					world.addEntity(LightFactory.createPoint(world, DGWorld.rayHandler,  DGWorld.numRays, new Color(0.0f, 0.45f, 0.0f, 1.0f), DGWorld.lightDistance, x+0.5f, y+0.5f));
+					world.addEntity(LightFactory.createPoint(world, DGWorld.rayHandler,  DGWorld.numRays, new Color(0.1f, 0.45f, 0.1f, 1.0f), DGWorld.lightDistance, x+0.5f, y+0.5f));
 				}
 				else if(isCellBlocked(x,y,"lightBlue")){
-					world.addEntity(LightFactory.createPoint(world, DGWorld.rayHandler,  DGWorld.numRays, new Color(0.0f, 0.0f, 0.6f, 1.0f), DGWorld.lightDistance, x+0.5f, y+0.5f));
+					world.addEntity(LightFactory.createPoint(world, DGWorld.rayHandler,  DGWorld.numRays, new Color(0.1f, 0.1f, 0.6f, 1.0f), DGWorld.lightDistance, x+0.5f, y+0.5f));
 				}
 				else if (isCellBlocked(x,y, "waterLight")){
 					world.addEntity(LightFactory.createPoint(world, DGWorld.rayHandler,  DGWorld.numRays, new Color(0.0f, 0.0f, 0.2f, 1.0f), DGWorld.lightDistance, x+0.5f, y+0.5f));

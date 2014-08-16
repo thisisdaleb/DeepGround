@@ -16,11 +16,6 @@
    <property name="diagonalLeft" value="1"/>
   </properties>
  </tile>
- <tile id="5">
-  <properties>
-   <property name="waterLight" value=""/>
-  </properties>
- </tile>
  <tile id="6">
   <properties>
    <property name="water" value=""/>

@@ -4,32 +4,42 @@
   <image source="TileSetA.png" width="96" height="80"/>
   <tile id="0">
    <properties>
-    <property name="blocked" value=""/>
+    <property name="blocked" value="1"/>
    </properties>
   </tile>
   <tile id="3">
    <properties>
-    <property name="diagonalRight" value=""/>
+    <property name="diagonalRight" value="1"/>
    </properties>
   </tile>
   <tile id="4">
    <properties>
-    <property name="diagonalLeft" value=""/>
+    <property name="diagonalLeft" value="1"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="water" value=""/>
    </properties>
   </tile>
   <tile id="8">
    <properties>
-    <property name="blocked" value=""/>
+    <property name="blocked" value="1"/>
    </properties>
   </tile>
   <tile id="9">
    <properties>
-    <property name="blocked" value=""/>
+    <property name="blocked" value="1"/>
    </properties>
   </tile>
   <tile id="10">
    <properties>
-    <property name="blocked" value=""/>
+    <property name="blocked" value="1"/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="waterLight" value=""/>
    </properties>
   </tile>
   <tile id="19">
@@ -54,18 +64,38 @@
   </tile>
   <tile id="23">
    <properties>
+    <property name="blocked" value="1"/>
+   </properties>
+  </tile>
+  <tile id="26">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="27">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="28">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="29">
+   <properties>
     <property name="blocked" value=""/>
    </properties>
   </tile>
  </tileset>
  <layer name="Back" width="32" height="18">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2DkAcaBdsAoGAWjYBSMggEFAA8IAAI=
+   eJztwQEBAAAAgiD/r25IQAEAfBkJAAAB
   </data>
  </layer>
  <layer name="Front" width="32" height="18">
   <data encoding="base64" compression="zlib">
-   eJztlFEOwyAIhmniHtrnrVt3uh6tR/FoxUUWZhCocw9LSvLHxgj/p1IBACbUYOjRQU/4jImNmleZ1ysk/xava0f/S2MtKQJqVDQI/hpDWU9ax9dYPVXzrzEsoPdFcHomzRV/5I6td8HrIOu6HNw/8se8j5XxuDmoTvKmOYuB8tBnS9/3PDcyBu9ZMP9IczeDgeeFzFC7R4uhuMc3B46bt/+svtV6X+pjq17me/XdUZUMVIf/I1YN40jP+HFo77P3Hf5G1vvUkvNP2gEb5B+P
+   eJy11d0KgCAMBtAJdVHd9l/2/o9ZQoGNNbemg+9K8axScwDgmMwoO7zLE3OepNbj3JAVbLUgD6/XJvz6ntcb+8A1Cv24h6eqK00UPK4pie+QlxrX9CP1tZH24Av5mh5yealzWtK3nFPuGSSJ7cngW+8aqvBZpcLZg9GVfLvup0F53B1Ryq+UHueHtTT3l9XGfvhfSfdhDlvy/r/2cM67ciPco4BD5QRXoAeQ
   </data>
  </layer>
 </map>

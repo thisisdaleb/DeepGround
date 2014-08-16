@@ -53,14 +53,14 @@
    </properties>
   </tile>
  </tileset>
- <layer name="Back" width="32" height="18">
+ <layer name="Back" width="32" height="18" visible="0">
   <data encoding="base64" compression="zlib">
    eJztwQEBAAAAgiD/r25IQAEAfBkJAAAB
   </data>
  </layer>
  <layer name="Front" width="32" height="18">
   <data encoding="base64" compression="zlib">
-   eJzlkI0KgCAMhCcUEYRZUb3/m1akcIx+nK2COjhEvO07rImoe8mWVtVKuyR7AhvV+NOxXpa9t3AP2SDn5yxkHeRpY+ZI7XlETeODrDc1CLJ9IuMvf/l1ZbOrCOc3sc3sIsJGuUNgS/haHZAt5V/twNkpfGmHhVl68z2pfAM70bzXHlODv2fsE5PX5qMn1UoI9g==
+   eJztjtsKwzAMQx3oGIOSZN3t//90GU1AmKWNXW/pQwWihMo6CkR062RPs4JRl6SnsFHX/I1sl2f/J3iXbFHMdx6yEfL05WZJ03rETK8/snrqKcg+lIy78u7QvjQkjw0+/Yjtks8NdsYbClvCt9qAbCl/6wbO1vClGz7MSzbv0fIddKL5rhrTgl8z7mnJW/PRb8RSCPM=
   </data>
  </layer>
 </map>
