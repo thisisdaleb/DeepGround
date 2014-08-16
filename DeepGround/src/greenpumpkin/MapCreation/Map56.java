@@ -1,5 +1,5 @@
 package greenpumpkin.MapCreation;
 
-public class ItemList {
+public class Map56 {
 
 }
