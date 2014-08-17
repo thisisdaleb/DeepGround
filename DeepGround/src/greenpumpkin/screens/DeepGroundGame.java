@@ -35,7 +35,6 @@ public class DeepGroundGame implements Screen {
 		//deletes and creates maps
 		world.setSystem(new MapChangeS());
 		world.setSystem(new DeleteMapEntitiesS());
-		world.setSystem(new EntitiesOnMapS());
 		world.setSystem(new LightsOnMapS());
 		//all other game code
 		world.setSystem(new ControllerInputS());
@@ -65,7 +64,7 @@ public class DeepGroundGame implements Screen {
 			world.process();
 		}
 	}
-
+ 
 	@Override
 	public void resize(int width, int height) {
 		stage.getViewport().setCamera(new VirtualResolution(DeepGround.WIDTH, DeepGround.HEIGHT));

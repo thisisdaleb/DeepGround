@@ -22,19 +22,19 @@ public class MapChangeS extends EntityProcessingSystem {
 	protected void process(Entity e) {
 		PositionC position = posMap.get(e);
 		
-		if(position.x<0){
-			position.x=30.8f;
+		if((position.x+0.5f)<0){
+			position.x=31f;
 			changeMap(-1,0);
 		}
-		if(position.x>32){
-			position.x=0.2f;
+		if((position.x+0.5f)>32){
+			position.x=0.0f;
 			changeMap(1,0);
 		}
-		if(position.y<0){
-			position.y=16.8f;
+		if((position.y+1f)<0){
+			position.y=17f;
 			changeMap(0,-1);
 		}
-		if(position.y>18){
+		if((position.y+1f)>18){
 			position.y=0.2f;
 			changeMap(0,1);
 		}

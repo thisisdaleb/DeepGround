@@ -1,6 +1,9 @@
 package greenpumpkin.artemis.systems;
 
+import greenpumpkin.MapCreation.MapEntityCreator;
+import greenpumpkin.artemis.DGWorld;
 import greenpumpkin.artemis.components.ItemC;
+
 import com.artemis.Aspect;
 import com.artemis.Entity;
 import com.artemis.EntitySystem;
@@ -19,6 +22,7 @@ public class DeleteMapEntitiesS extends EntitySystem {
 		for (int i = 0, s = entities.size(); s > i; i++) {
 			process(entities.get(i));
 		}
+		MapEntityCreator.createTheMapEntities(world, DGWorld.mapLocation[0], DGWorld.mapLocation[1]);
 	}
 	
 	private void process(Entity e) {
