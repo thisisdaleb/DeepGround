@@ -9,11 +9,11 @@ import com.artemis.Entity;
 import com.artemis.EntitySystem;
 import com.artemis.utils.ImmutableBag;
 
-public class DeleteMapEntitiesS extends EntitySystem {
+public class EntityManagementS extends EntitySystem {
 	public static boolean remove = false;
 
 	@SuppressWarnings("unchecked")
-	public DeleteMapEntitiesS() {
+	public EntityManagementS() {
 		super(Aspect.getAspectForAll(ItemC.class));
 	}
 

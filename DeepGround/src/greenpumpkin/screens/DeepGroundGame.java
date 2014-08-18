@@ -34,7 +34,7 @@ public class DeepGroundGame implements Screen {
 		world.setManager(new GroupManager());
 		//deletes and creates maps
 		world.setSystem(new MapChangeS());
-		world.setSystem(new DeleteMapEntitiesS());
+		world.setSystem(new EntityManagementS());
 		world.setSystem(new LightsOnMapS());
 		//all other game code
 		world.setSystem(new ControllerInputS());

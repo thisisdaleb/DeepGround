@@ -1,7 +1,7 @@
 package greenpumpkin.artemis;
 
 import greenpumpkin.MapCreation.MapList;
-import greenpumpkin.artemis.systems.DeleteMapEntitiesS;
+import greenpumpkin.artemis.systems.EntityManagementS;
 
 import java.util.Arrays;
 
@@ -67,7 +67,7 @@ public class DGWorld extends World {
 		frontRenderer = new OrthogonalTiledMapRenderer(DGWorld.foregroundMap, mapSize);
 		frontRenderer.setView(camera);
 		collisionLayer = (TiledMapTileLayer) foregroundMap.getLayers().get(1);
-		DeleteMapEntitiesS.remove=true;
+		EntityManagementS.remove=true;
 	}
 	
 	public static void setBackgroundMap(String mapFile) {

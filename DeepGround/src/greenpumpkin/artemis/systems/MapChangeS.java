@@ -26,7 +26,7 @@ public class MapChangeS extends EntityProcessingSystem {
 			position.x=31f;
 			changeMap(-1,0);
 		}
-		if((position.x+0.5f)>32){
+		else if((position.x+0.5f)>32){
 			position.x=0.0f;
 			changeMap(1,0);
 		}
@@ -34,8 +34,8 @@ public class MapChangeS extends EntityProcessingSystem {
 			position.y=17f;
 			changeMap(0,-1);
 		}
-		if((position.y+1f)>18){
-			position.y=0.2f;
+		else if((position.y+1f)>18){
+			position.y=0.0f;
 			changeMap(0,1);
 		}
 	}

@@ -29,7 +29,7 @@ public class LightsOnMapS extends VoidEntitySystem {
 					world.addEntity(LightFactory.createPoint(world, DGWorld.rayHandler,  DGWorld.numRays, new Color(0.0f, 0.0f, 0.2f, 1.0f), DGWorld.lightDistance, x+0.5f, y+0.5f));
 				}
 			}
-		DeleteMapEntitiesS.remove=false;
+		EntityManagementS.remove=false;
 	}
 	
 	private boolean isCellBlocked(float x, float y, String id) {
@@ -48,7 +48,7 @@ public class LightsOnMapS extends VoidEntitySystem {
 	
 	@Override
 	protected boolean checkProcessing() {
-		if(DeleteMapEntitiesS.remove)
+		if(EntityManagementS.remove)
 			return true;
 		return false;
 	}
